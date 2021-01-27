@@ -5,7 +5,9 @@ My Data Science Portfolio
 
  ![alt text](https://raw.githubusercontent.com/hasharissa/Data-Science/main/mldiabetes-deploy.png "ML Prediction Thumbnail")
 
+Demo link : https://mldiabetes-prediction-api.herokuapp.com/
 
+**Description**
 - Develop classifier model using Logistic Regression, KNN and Decision Tree
 - Featured Engineered using IQR & Z-Score for Outlier, Oversampling for Imbalance Dataset and StandardScaler for Standarization.
 - Optimized using GridSearchCV & RandomSearchCV to reach the best model at 93% recall.
