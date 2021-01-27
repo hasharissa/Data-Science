@@ -3,8 +3,8 @@ My Data Science Portfolio
 
 # [Project 1: Diabetes Classifier](https://github.com/hasharissa/Data-Science/blob/main/comparative-ml-scaling.ipynb)
 
-[logo]: https://raw.githubusercontent.com/hasharissa/Data-Science/main/mldiabetes-deploy.png
- "Logo Title Text 2"
+ ![alt text](https://raw.githubusercontent.com/hasharissa/Data-Science/main/mldiabetes-deploy.png "ML Prediction Thumbnail")
+
 
 - Develop classifier model using Logistic Regression, KNN and Decision Tree
 - Featured Engineered using IQR & Z-Score for Outlier, Oversampling for Imbalance Dataset and StandardScaler for Standarization.
