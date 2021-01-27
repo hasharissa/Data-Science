@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+ <!-- Bootstrap core CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+<div class="container">
+    <main>
+        <div class="py-5 text-center">
+            <h2>Predict Diabetes with KNN Algorithm</h2>
+            <p class="lead">Below is an example form build in with KNN Algorithm model machine learning based on Kaggle dataset.</p>
+    </main>
+ <div class="login">
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    
+    <div class="row">
+    
+        <div class="col">
+              <label for="Pregnancies" class="form-label">Have pregnant?<span class="text-muted"></span></label>
+              <input name="Pregnancies" class="form-control" placeholder="Input in number such as 0,1,2" required="required">
+              <div id="passwordHelpBlock" class="form-text"> If you are male, just type 0.
+              </div> 
+        </div>
+    	
+    	 <div class="col">
+              <label for="Glucose" class="form-label">How much is your Glucose?<span class="text-muted"></span></label>
+              <input name="Glucose" class="form-control" placeholder="Input in number such as 0,1,2" required="required">
+              <div id="passwordHelpBlock" class="form-text">
+              </div> 
+        </div>
+        
+        <div class="col">
+              <label for="BloodPressure" class="form-label">How much is your Blood Pressure?<span class="text-muted"></span></label>
+              <input name="BloodPressure" class="form-control" placeholder="Input in number such as 0,1,2" required="required">
+              <div id="passwordHelpBlock" class="form-text">
+              </div> 
+        </div>
+        
+    </div>
+    	
+    <div class="row mt-5">
+    
+        <div class="col">
+              <label for="SkinThickness" class="form-label">Your Skin Thickness?<span class="text-muted"></span></label>
+              <input name="SkinThickness" class="form-control" placeholder="Input in number such as 0,1,2" required="required">
+              <div id="passwordHelpBlock" class="form-text">
+              </div> 
+        </div>
+    	
+    	 <div class="col">
+              <label for="Insulin" class="form-label">How much is your Insulin?<span class="text-muted"></span></label>
+              <input name="Insulin" class="form-control" placeholder="Input in number such as 0,1,2" required="required">
+              <div id="passwordHelpBlock" class="form-text">
+              </div> 
+        </div>
+        
+        <div class="col">
+              <label for="BMI" class="form-label">How much is your BMI?<span class="text-muted"></span></label>
+              <input name="BMI" class="form-control" placeholder="Input in number such as 0,1,2" required="required">
+              <div id="passwordHelpBlock" class="form-text">
+              </div> 
+        </div>
+        
+    </div>
+    
+    <div class="row mt-5">
+        <div class="col-6">
+            <label for="DiabetesPedigreeFunction" class="form-label">How much is your Diabetes Pedigree Function?<span class="text-muted"></span></label>
+            <input name="DiabetesPedigreeFunction" class="form-control" placeholder="Input in number such as 0,1,2" required="required">
+            <div id="passwordHelpBlock" class="form-text">
+            </div> 
+        </div>
+        <div class="col-2">
+            <label for="Age" class="form-label">How old are you?<span class="text-muted"></span></label>
+            <input name="Age" class="form-control" placeholder="Input in number such as 0,1,2" required="required">
+            <div id="passwordHelpBlock" class="form-text">
+        </div>
+    </div>	
+    
+    
+    <div class="row">
+    <div class="py-5 text-center">
+        <hr class="my-4">
+
+        <button type="submit" class="btn btn-primary btn-lg">Predict</button>
+    </div>
+    </div>
+    
+    </form>
+
+   <br>
+   <br>
+   
+   <div class="py-5 text-center">
+       <h1 class="display-4", text-align="center";>{{ prediction_text }}</h1>
+       <p>{{ age_text }}</p>
+   </div>
+   
+ </div>
+
+<footer class="footer mt-auto py-3 bg-light text-center">
+  <div class="container">
+    <span class="text-muted">©2021 Hashfi Arissa</span>
+    <span class="text-muted"><p><a href='https://github.com/hasharissa/Data-Science'>https://github.com/hasharissa/Data-Science </a> </p></span>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>
