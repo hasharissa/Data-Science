@@ -2,10 +2,9 @@
 My Data Science Portfolio
 
 # [Project 1: Diabetes Classifier](https://github.com/hasharissa/Data-Science/blob/main/comparative-ml-scaling.ipynb)
+Demo link : https://mldiabetes-prediction-api.herokuapp.com/
 
  ![alt text](https://raw.githubusercontent.com/hasharissa/Data-Science/main/mldiabetes-deploy.png "ML Prediction Thumbnail")
-
-Demo link : https://mldiabetes-prediction-api.herokuapp.com/
 
 **Description**
 - Develop classifier model using Logistic Regression, KNN and Decision Tree
